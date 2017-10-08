@@ -77,7 +77,7 @@ public class CSVReader {
         return bookList;
     }
 
-    public void checkoutBook(String movieName) throws IOException {
+    public void checkoutMovie(String movieName) throws IOException {
         List<Map<String, String>> moviesList = findAllMovies();
         for (Map<String, String> movie : moviesList) {
             if (movie.get("movieName").equalsIgnoreCase(movieName)) {
